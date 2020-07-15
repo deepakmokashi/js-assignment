@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!-- we learn difference between var and let Keywords -->
+<!-- var keyword -->
+<script>
+var m;
+m=7;
+document.write("Value of m using var", m);
+document.write("\n");
+</script>
+<br>
+
+<!-- In the above snippet code we declaress m and print its value -->
+<script>
+{
+    let m;
+    m=9;
+    document.write("value of m using let in block",m); 
+}
+</script>
+<br>
+<script>
+document.write("value after block",m);
+</script>
+
+
+<!-- But In the above code snippet we declares m and print in cearly braces ,so It will print new value. 
+    and outside the scope we print so it will print previous value. as we can see in the output below  -->
+  
+    <!-- Value of m using var7
+         value of m using let in block9
+         value after block7 
+    -->
+  
+    <!-- But it is not the case with var it will print
+         Value of m using var 7
+         value of m using let in block 9
+         value after block 9
+        -->
+        <!-- This is main Difference  -->
+        <!-- And var is used for global scope and let is used for functional block -->
+           <br>
+           <br>
+        <b>Above output using var for global scope and let used for functional block</b>
+         
+        <h2>This is main Difference</h2>
+        <h2>And var is used for global scope and let is used for functional block</h2>
+        <h2>var is used in previous version Es6 used let Keyword </h2>
+  
+
+
+    <!-- Const keyword -->
+    <script>
+    const a=10;
+    document.write("value using const ",a);
+    a=20;
+    console.log(a);
+</script>
+ 
+<!-- It will show error in console we can't update const value  -->
+</body>
+</html>
