@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- program for String and Array operation -->
+        <!-- String Methods -->
+        <script>
+        let str ="Hello I am a coder";
+        console.log(str);
+
+        //length
+        console.log(str.length);
+       // indexof
+        console.log(str.indexOf("I"));
+        console.log(str.lastIndexOf("o"));
+        console.log(str[2]);
+        
+        //slice
+        let str2="Hello, World";
+        console.log(str2.slice(6,12)); 
+        console.log(str2.slice(-12,-6));
+        console.log(str2.slice(2));
+        
+        
+        // substring
+
+        let str3="Deepak Mokashi";
+        console.log(str3.substring(3,10));
+        console.log(str3.substr(5,6));
+        console.log(str3.substr(6));
+        console.log(str3.substr(-6));
+
+        //Replacing
+        let s1="Deepak";
+        console.log(s1);
+        console.log(s1.replace("Darshan","Rahude"));
+        console.log(s1); //but old value remains same
+        let s2="Hello hey hello"
+        console.log(s2);
+        console.log(s2.replace("Hello","Rahude"));
+        console.log(s2); //but old value remains same
+
+        str3 = "Please visit Microsoft!";
+        console.log(str3);
+         console.log(str3.replace(/MICROSOFT/i, "W3Schools"));  //for case sensitive
+
+        //  Array
+
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits);
+       // push pop
+        console.log(fruits.pop());
+        console.log(fruits.push("custard"));
+        console.log(fruits.shift());
+        console.log(fruits.unshift("Orange")); // array length
+        fruits[0] = "Kiwi"; 
+        console.log(fruits);
+       // splice
+        var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits1.splice(2, 0, "Lemon", "Kiwi");
+        console.log(fruits1);
+        fruits.splice(0, 1);
+        console.log(fruits1);
+        
+         //slicing
+         var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+         var citrus = fruits.slice(1);
+         console.log(citrus);
+           
+          
+
+        </script>
+
+</body>
+</html>
