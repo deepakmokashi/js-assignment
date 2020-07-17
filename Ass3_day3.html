@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Program for user Input -->
+     <script>
+    let marks=prompt("Enter the marks ");
+     if(marks>=60)
+     {
+         console.log(`Marks are ${marks} and grade is A`);
+     }
+     else if(marks>=50 && marks<60)
+     {
+         console.log(`Marks are ${marks} and grade is B`);
+     }
+     else if(marks>=40 && marks<50)
+     {
+         console.log(`Marks are ${marks} and grade is C`);
+     }
+     else
+     {
+        console.log(`Marks are ${marks} and grade is D`);
+     }
+     console.log("Using Ternary Operator");
+     // Using Ternary operator
+     let mark = (marks>=60) ? `Marks are ${marks} and grade is A`: 
+             (marks>=50 && marks<60) ? `Marks are ${marks} and grade is B`:
+             (marks>=40 && marks<50) ? `Marks are ${marks} and grade is C`:
+             `Marks are ${marks} and grade is D`;
+
+ console.log(mark);
+    </script>
+</body>
+</html>
