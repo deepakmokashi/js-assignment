@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let emp =prompt("Enter the sale for employee");
+      if(emp>0 && emp<5000)
+      {
+         console.log(`Employee got 2% commision for ${emp} sale`);
+      }
+      else if(emp>=5000 && emp<9999)
+      {
+         console.log(`Employee got 5% commision for ${emp} sale`);
+      }
+      else if(emp>=10000 && emp<20000)
+      {
+         console.log(`Employee got 7% commision for ${emp} sale`);
+      }
+      else if(emp>20000)
+      {
+         console.log(`Employee got 2% commision for ${emp} sale`);
+      }
+      else{
+          console.log("You can try better next time");
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let shoppingList=["biscuit","oil","coconut"];
+        console.log(shoppingList);
+        let ans=prompt("Do you want to add some Products if yes then type y or Y");
+            
+             if(ans=='y' || ans=='Y')
+             {
+                 let shoppingBasket=["Fruit",...shoppingList,"cadboury"];
+                  console.log(shoppingBasket);
+             }
+             else
+             {
+                 console.log(shoppingList);
+             }
+   
+    </script>
+</body>
+</html>
